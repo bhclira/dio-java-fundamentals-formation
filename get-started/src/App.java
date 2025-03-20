@@ -24,7 +24,6 @@ public class App {
         System.out.println("");
 
         // aula 02 - Keywords e tipos primitivos
-
         byte number = 1;
         short number2 = 1;
         int number3 = 1;
@@ -35,6 +34,11 @@ public class App {
         var character2 = 'B';
         boolean condition = true;
 
-        
+        // Aula 03 - Operdaores de Atribuição e Lógicos
+        System.out.println("Quanto é 2 + 2: ");
+        var result = scanner.nextInt();
+        var isRight = result == 4;
+        System.out.printf("O resultado é 4, você acertou? (%s)", isRight);
+
     }
 }
