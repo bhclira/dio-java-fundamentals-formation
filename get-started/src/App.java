@@ -8,7 +8,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        // como comentar - meu comentário
+        // como comentar - meu comentário - aula 01
         Scanner scanner = new Scanner(System.in);
         System.out.println("Olá, informe o seu nome:");
         String name = new Scanner(System.in).nextLine();
@@ -22,6 +22,19 @@ public class App {
         final int NUMBER = 10;
         System.out.println("Olá, a constante é: " + NUMBER);
         System.out.println("");
+
+        // aula 02 - Keywords e tipos primitivos
+
+        byte number = 1;
+        short number2 = 1;
+        int number3 = 1;
+        long number4 = 1L;
+        float number5 = 1.0f;
+        double number6 = 1.0;
+        char character = 'A';
+        var character2 = 'B';
+        boolean condition = true;
+
         
     }
 }
