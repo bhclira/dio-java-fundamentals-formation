@@ -1,4 +1,4 @@
-package br.com.dio.br.com;
+package br.com;
 
 public class AnotherClass {
 
