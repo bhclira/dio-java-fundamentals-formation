@@ -1,3 +1,6 @@
+package Classes;
+
+
 public class App {
     public static void main(String[] args) throws Exception {
         // classes, objetos, etc
@@ -13,7 +16,6 @@ public class App {
 
         System.out.println("Male name: " + male.getName() + "\n age: " + male.getAge());
         System.out.println("female name: " + female.getName() + "\n age: " + female.getAge());
-
 
     }
 }
