@@ -1,4 +1,4 @@
-package Classes;
+package classes;
 public class Person {
     private final String name;
     private int age;
