@@ -7,8 +7,11 @@ public class PetMachine {
     private int shampoo;
 
     private Pet pet;
-
     
+    // construtor vazio
+    public PetMachine () {
+
+    }
     // funções do enunciado
 
     // 1. dar banho no pet
@@ -85,8 +88,12 @@ public class PetMachine {
         this.clean = true;
         System.out.println("A máquina está limpa.");
     }
-    
 
+    public int getWater() {
+        return water;
+    }
+    
+    
     
 
 }
