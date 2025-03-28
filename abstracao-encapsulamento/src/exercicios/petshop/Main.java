@@ -102,7 +102,7 @@ public class Main {
         petMachine.setPet(pet);
         // mensagem de retorno para o usuário
         // o nome do pet é passado para a máquina e o pet é colocado na máquina
-        System.out.println("O pet " + pet.getName() + " foi colocado na máquina.");
+        
     }
 
     public void getPetFromMachine () {

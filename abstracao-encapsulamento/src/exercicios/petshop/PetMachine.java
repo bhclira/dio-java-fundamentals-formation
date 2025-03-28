@@ -78,12 +78,19 @@ public class PetMachine {
         }
 
         this.pet = pet;
+        System.out.println("O pet " + pet.getName() + " foi colocado na máquina.");
     }
 
     // retirar o pet da máquina
     public void removePet() {
+        if (this.pet == null) {
+            System.out.println("Não tem pet na máquina.");
+            return; // interrompe a execução do método atual
+        }
         this.clean = this.pet.isClean();
-        System.out.println("O pet " + this.pet.getName() + " está limpo.");
+        System.out.println("O pet " + this.pet.getName() + " está limpo e foi tirado da máquina");
+        // depois de retirado, o pet deve ser setado como null
+        // para que a máquina possa receber outro pet
         this.pet = null;
     }
 

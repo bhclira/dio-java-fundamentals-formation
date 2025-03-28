@@ -3,7 +3,6 @@ package exercicios.petshop;
 public class Pet {
 
         private final String name;
-
         private boolean clean;
 
         public Pet(String name) {
