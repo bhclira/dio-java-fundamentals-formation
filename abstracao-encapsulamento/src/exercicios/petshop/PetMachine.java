@@ -9,7 +9,8 @@ public class PetMachine {
     private Pet pet;
     
     // construtor vazio
-    public PetMachine () {
+    public PetMachine (Pet pet) {
+        this.pet = pet;
 
     }
     // funções do enunciado
@@ -27,6 +28,7 @@ public class PetMachine {
         pet.setClean(true);
         System.out.println("O Pet " + pet.getName() + " está limpo");
     }
+
     public void addWater () {
         if (water == 30) {
             System.out.println("A máquina já está no máximo de água.");
