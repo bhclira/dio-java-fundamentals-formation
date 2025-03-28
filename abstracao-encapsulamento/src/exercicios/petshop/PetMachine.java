@@ -9,9 +9,8 @@ public class PetMachine {
     private Pet pet;
     
     // construtor vazio
-    public PetMachine (Pet pet) {
-        this.pet = pet;
-
+    public PetMachine () {
+ 
     }
     // funções do enunciado
 
