@@ -74,10 +74,4 @@ Este projeto foi desenvolvido como parte do desafio do **Curso Java Essential** 
 
 ---
 
-## Descrição para LinkedIn
-
-**PetShopMachine** é um projeto desenvolvido em Java como parte do desafio do **Curso Java Essential** da **Digital Innovation One (DIO)**. Ele simula o funcionamento de uma máquina de pet shop, permitindo gerenciar recursos como água e shampoo, além de realizar operações com pets, como dar banho e limpar a máquina. Este projeto foi uma excelente oportunidade para consolidar conhecimentos em Java e aplicar conceitos de orientação a objetos. O código está disponível para contribuições no GitHub!
-
----
-
 Obrigado por conferir este projeto! 😊
