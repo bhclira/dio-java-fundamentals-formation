@@ -44,9 +44,11 @@ public class PetMachine {
             System.out.println("A máquina já está no máximo de shampoo.");
             return;
         }
+        else {
+            shampoo += 2;
+            System.out.println("A máquina agora tem " + shampoo + " litros de água.");
+        }
 
-        shampoo += 2;
-        System.out.println("A máquina agora tem " + shampoo + " litros de água.");
 
     }
 
