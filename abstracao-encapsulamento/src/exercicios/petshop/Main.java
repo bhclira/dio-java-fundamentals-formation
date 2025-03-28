@@ -31,7 +31,7 @@ public class Main {
             scanner.nextLine(); // Consumir a quebra de linha pendente
 
             switch (option) {
-                
+                case 4 -> verifyWater(); // verificar a água na máquina
                 case 5 -> verifyShampoo(); // verificar o shampoo na máquina                        
                 case 6 -> checkIfHasPetInMachine(); // verificar se tem pet na máquina
                 case 7 -> setPetInPetMachine(); // verificar se existe pet na máquina e colocar o pet na máquina
@@ -43,11 +43,15 @@ public class Main {
 
     }
     // MÉTODOS
-
+    // 4. método para verificar o shampoo na máquina
+    public static void verifyWater() {
+        var amount = petMachine.getWater();
+        System.out.println("A máquina tem " + amount + " litro(s) de água.");
+    }
     // 5. método para verificar o shampoo na máquina
     public static void verifyShampoo() {
         var amount = petMachine.getShampoo();
-        System.out.println("A máquina tem " + amount + " litros de shampoo.");
+        System.out.println("A máquina tem " + amount + " litro(s) de shampoo.");
     }
 
     // 6. método para verificar se tem pet na máquina
