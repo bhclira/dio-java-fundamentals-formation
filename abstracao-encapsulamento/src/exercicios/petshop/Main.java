@@ -31,26 +31,45 @@ public class Main {
             scanner.nextLine(); // Consumir a quebra de linha pendente
 
             switch (option) {
-                case 1 -> petMachine.takeAShower();
-                case 2 -> petMachine.addWater();
-                case 3 -> petMachine.addShampoo();
-                case 4 -> System.out.println("Água disponível: " + petMachine.getWater() + " litros.");
-                case 5 -> System.out.println("Shampoo disponível: " + petMachine.getShampoo() + " ml.");
-                case 6 -> System.out.println("Há um pet na máquina? " + petMachine.hasPet());
-                case 7 -> {
-                    System.out.print("Digite o nome do pet: ");
-                    String petName = scanner.nextLine();
-                    petMachine.setPet(new Pet(petName));
-                }
-                case 8 -> petMachine.removePet();
-                case 9 -> petMachine.cleanMachine();
-                case 0 -> System.out.println("Saindo do programa...");
-                default -> System.out.println("Opção inválida! Tente novamente.");
+                case 6 -> checkIfHasPetInMachine(); // verificar se tem pet na máquina
+                case 7 -> setPetInPetMachine(); // verificar se existe pet na máquina e colocar o pet na máquina
+                case 8 -> petMachine.removePet(); // retirar o pet da máquina
+                case 9 -> petMachine.wash(); // limpar a máquina
+
             }
         } while (option != 0);
 
-        scanner.close();
+    }
+    // MÉTODOS
+    // 6. método para verificar se tem pet na máquina
+    public static void checkIfHasPetInMachine() {
+        var hasPet = petMachine.hasPet();
+        // verificar se tem pet na máquina e imprimir o nome do pet
+        System.out.println(hasPet ? "Tem pet na máquina." : "Não tem pet na máquina.");
+    }
 
+    // 7. método para criar o pet e colocá-lo em seguida
+    public static void setPetInPetMachine() {
+        
+        var name = "";
+        // verificar se o nome do pet é vazio ou nulo
+        while (name == null || name.isEmpty()) {
+            //trava o usuário enquanto ele nao passar o nome do Pet
+            System.out.println("Digite o nome do pet: ");
+            name = scanner.nextLine();
+        }
+        // uma vez setado o nome do pet com o nome passado pelo usuário, ele é instanciado e colocado na máquina
+        var pet = new Pet(name);
+        // agora que o pet foi instanciado, ele é colocado na máquina
+        // e o nome do pet é setado na máquina
+        petMachine.setPet(pet);
+        // mensagem de retorno para o usuário
+        // o nome do pet é passado para a máquina e o pet é colocado na máquina
+        System.out.println("O pet " + pet.getName() + " foi colocado na máquina.");
+    }
+
+    public void getPetFromMachine () {
+        
     }
 
 }

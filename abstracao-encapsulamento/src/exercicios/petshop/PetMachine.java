@@ -2,15 +2,15 @@ package exercicios.petshop;
 
 public class PetMachine {
 
-    private boolean clean;
-    private int water;
-    private int shampoo;
+    private boolean clean = true;
+    private int water = 30;
+    private int shampoo = 10;
 
     private Pet pet;
-    
+
     // construtor vazio
-    public PetMachine () {
- 
+    public PetMachine() {
+
     }
     // funções do enunciado
 
@@ -28,7 +28,7 @@ public class PetMachine {
         System.out.println("O Pet " + pet.getName() + " está limpo");
     }
 
-    public void addWater () {
+    public void addWater() {
         if (water == 30) {
             System.out.println("A máquina já está no máximo de água.");
             return;
@@ -37,10 +37,9 @@ public class PetMachine {
         water += 2;
         System.out.println("A máquina agora tem " + water + " litros de água.");
 
-
     }
 
-    public void addShampoo () {
+    public void addShampoo() {
         if (shampoo == 10) {
             System.out.println("A máquina já está no máximo de shampoo.");
             return;
@@ -50,9 +49,11 @@ public class PetMachine {
         System.out.println("A máquina agora tem " + shampoo + " litros de água.");
 
     }
+
     public int getShampoo() {
         return shampoo;
     }
+
     public void setShampoo(int shampoo) {
         this.shampoo = shampoo;
     }
@@ -61,6 +62,7 @@ public class PetMachine {
     public boolean hasPet() {
         return pet != null;
     }
+
     // a maquian deve permitir apenas um pet por vez
     //
     public void setPet(Pet pet) {
@@ -87,14 +89,11 @@ public class PetMachine {
         this.water -= 10;
         this.shampoo -= 2;
         this.clean = true;
-        System.out.println("A máquina está limpa.");
+        System.out.println("A limpeza da máquina está completa.");
     }
 
     public int getWater() {
         return water;
     }
-    
-    
-    
 
 }
