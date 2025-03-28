@@ -31,6 +31,7 @@ public class Main {
             scanner.nextLine(); // Consumir a quebra de linha pendente
 
             switch (option) {
+                case 1 -> darBanhoNoPet(); // dar banho no pet
                 case 2 -> setWater(); // adicionar água na máquina
                 case 3 -> setShampoo(); // adicionar shampoo na máquina
                 case 4 -> verifyWater(); // verificar a água na máquina
@@ -39,12 +40,23 @@ public class Main {
                 case 7 -> setPetInPetMachine(); // verificar se existe pet na máquina e colocar o pet na máquina
                 case 8 -> petMachine.removePet(); // retirar o pet da máquina
                 case 9 -> petMachine.wash(); // limpar a máquina
+                case 0 -> System.exit(0); // sair do programa
+                default -> System.out.println("Opção inválida. Tente novamente."); // opção inválida
+
 
             }
         } while (option != 0);
 
     }
     // MÉTODOS
+    // 1. método para dar banho no pet
+    public static void darBanhoNoPet() {
+        if (petMachine.hasPet()) {
+            petMachine.takeAShower();
+        } else {
+            System.out.println("Coloque o Pet na Máquina antes de lavar.");
+        }
+    }
     // 2. método para adicionar shampoo na máquina
     public static void setWater() {
         System.out.println("Adicionando água na máquina...");
