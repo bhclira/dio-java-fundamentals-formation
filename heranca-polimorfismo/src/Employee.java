@@ -53,5 +53,9 @@ public sealed abstract class Employee permits Manager, SalesMan {
     }
     
     // fim getters and setters
-    
+
+    // metodo getFullSalary
+    public double getFullSalary() {
+        return this.salary;
+    }
 }

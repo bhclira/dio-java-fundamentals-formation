@@ -36,4 +36,9 @@ public non-sealed class SalesMan extends Employee{
         return "SL" + this.getCode();
     }
 
+    @Override
+    public double getFullSalary() {
+        return this.salary + ((this.soldAmount * this.percentPerSold) / 100);
+    }
+
 }

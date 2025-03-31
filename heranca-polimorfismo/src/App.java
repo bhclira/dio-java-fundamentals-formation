@@ -28,7 +28,8 @@ public class App {
                 salesman.setCode("321");
                 salesman.setName("Maria");
                 salesman.setSalary(2800);
-                salesman.setPercentPerSold(0.1); 
+                salesman.setPercentPerSold(0.1);
+                salesman.setSoldAmount(1000);
 
                 System.out.println(salesman.getName());
                 System.out.println(salesman.getPercentPerSold());

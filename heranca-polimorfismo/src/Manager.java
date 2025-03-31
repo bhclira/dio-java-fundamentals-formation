@@ -44,4 +44,9 @@ public non-sealed class Manager extends Employee {
         return "MN" + this.getCode();
     }
 
+    @Override
+    public double getFullSalary() {
+        return this.salary + this.commission;
+    }
+
 }
