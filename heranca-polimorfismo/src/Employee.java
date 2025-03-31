@@ -1,4 +1,4 @@
-public class Employee {
+public sealed abstract class Employee permits Manager, SalesMan {
 
     private String code;
     private String name;
